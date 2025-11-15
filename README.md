@@ -1,7 +1,7 @@
-# PrivacyMegaPad - Privacy-Preserving Launchpad Protocol
+# PixelPad - Privacy-Preserving Launchpad Protocol
 
 <p align="center">
-    <a target="blank"><img src="./logo.jpg" alt="Zama Logo" width="200" /></a>
+    <a target="blank"><img src="./logo.png" alt="PixelPad Logo" width="200" /></a>
 </p>
 
 <p align="center">
@@ -10,7 +10,7 @@ A decentralized launchpad protocol focused on financial privacy, powered by Full
 
 ## Description
 
-**PrivacyMegaPad** is a decentralized launchpad protocol focused on financial privacy. It leverages Fully Homomorphic
+**PixelPad** is a decentralized launchpad protocol focused on financial privacy. It leverages Fully Homomorphic
 Encryption (FHE) powered by the Zama protocol to enable private participation in token launches—users can invest without
 revealing their token purchase amounts.
 
@@ -31,13 +31,13 @@ revealing their token purchase amounts.
 
 ## How It Works
 
-PrivacyMegaPad supports two main sale modes:
+PixelPad supports two main sale modes:
 
 ### Presale Mode
 
 #### 1. Token Seller Setup
 
-The seller creates a token or deposits their standard ERC-20 token into the PrivacyMegaPad contract.
+The seller creates a token or deposits their standard ERC-20 token into the PixelPad contract.
 
 #### 2. User Contributions
 
@@ -64,7 +64,7 @@ settlement.
 
 ### Auction Mode
 
-Similar to MegaETH's auction mechanism, PrivacyMegaPad offers a private auction mode:
+Similar to MegaETH's auction mechanism, PixelPad offers a private auction mode:
 
 #### 1. Auction Setup
 
@@ -88,7 +88,7 @@ Once the auction ends:
 
 #### 4. Settlement
 
-- Winning bidders receive their tokens in confidential form (cTokens)
+- Winning bidders receive their tokens in confidential form (zTokens)
 - zETH from winning bids is used for liquidity provision
 - Remaining zETH is returned to non-winning participants
 
@@ -100,33 +100,6 @@ Once the auction ends:
 - **OpenZeppelin Confidential Token Wrappers**: ERC-20 confidentiality layer
 - **Hardhat**: Development and testing framework
 - **Solidity**: Smart contract development
-
-## Future Development
-
-- **Expand Token Support**: Integrate additional investment tokens such as cUSDT, cDAI, and others to enhance platform
-  versatility.
-- **Support more types of investment**:
-  - Fair Launch
-  - Overflow Mechanism
-  - Private Sale
-  - Bonding Curve
-  - Auction Mode (similar to MegaETH) - Currently in development
-- **Integrate Privacy-Enabled DEXs**: As decentralized exchanges evolve to support cTokens, we aim to leverage these
-  platforms to enable fully private investment and trading experiences
-
-## How to deploy
-
-```bash
-# Deploy PrivacyPresaleFactory to Sepolia
-npx hardhat deploy --network sepolia --tags PrivacyPresaleFactory
-```
-
-## How to test
-
-```bash
-npx hardhat test
-```
-
 ## Documentation
 
 - [FHEVM Documentation](https://docs.zama.ai/fhevm)
